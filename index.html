@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Simulasi Rambu Lalu Lintas</title>
+      <link rel="stylesheet" href="style.css" />
+      <script src="script.js"></script>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+         rel="stylesheet"
+      />
+   </head>
+   <body>
+      <div class="kanan">
+         <img src="Red.svg" id="utara" />
+         <img src="Red.svg" id="timur" />
+      </div>
+      <div class="kiri">
+         <img src="Red.svg" id="barat" />
+         <img src="Red.svg" id="selatan" />
+      </div>
+
+      <div class="simulator">
+         <button id="simulasi" onclick="simulasi()">Start</button>
+         <button id="Esimulasi" onclick="Esimulasi()">Stop</button>
+      </div>
+      
+      <div id="horizontal-road">
+         <img src="Car.svg" class="mobil" id="mobil-barat" />
+         <img src="Car.svg" class="mobil" id="mobil-timur" /> 
+      </div>
+
+      <div id="vertical-road">
+         <img src="Car.svg" class="mobil" id="mobil-utara" />
+         <img src="Car.svg" class="mobil" id="mobil-selatan" /> 
+      </div>
+
+      <span id="timer">0</span>
+   </body>
+</html>
